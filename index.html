@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Geopatriación · ¿Dónde viven tus datos?</title>
+<meta name="description" content="Geopatriación: saber dónde están los datos de tu empresa, qué ley los rige y cómo prepararte para la Ley 21.719 de protección de datos personales en Chile.">
+<link rel="canonical" href="https://geopatriacion.cl/">
+<meta property="og:title" content="¿Dónde viven tus datos? · Geopatriación">
+<meta property="og:description" content="Mide la exposición de los datos de tu empresa antes de la entrada en vigencia de la Ley 21.719.">
+<meta property="og:url" content="https://geopatriacion.cl/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CL">
+<meta name="theme-color" content="#0F1F19">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#ECEEE8}
+a{color:#0F1F19}a:hover{color:#C2381A}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+</style>
+</head>
+<body>
+<div style="background: #ECEEE8; color: #0F1F19; font-family: 'Archivo', system-ui, sans-serif; font-size: 17px; line-height: 1.55; min-height: 100vh">
+
+  <!-- Barra superior: franja de coordenadas, como el margen de una carta topográfica -->
+  <div style="border-bottom: 1px solid #0F1F19; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.04em; color: #3F4B45">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 8px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px">
+      <span>HOJA 01 / CARTA DE UBICACIÓN DE DATOS</span>
+      <span>33°27′S 70°40′W · DATUM SIRGAS-Chile</span>
+    </div>
+  </div>
+
+  <!-- Encabezado -->
+  <header style="max-width: 1280px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+    <a href="#inicio" style="display: flex; align-items: center; gap: 10px; text-decoration: none">
+      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="12" fill="none" stroke="#0F1F19" stroke-width="1.5"></circle><line x1="14" y1="0" x2="14" y2="28" stroke="#0F1F19" stroke-width="1.5"></line><line x1="0" y1="14" x2="28" y2="14" stroke="#0F1F19" stroke-width="1.5"></line><circle cx="14" cy="14" r="4" fill="#C2381A"></circle></svg>
+      <span style="font-weight: 800; font-stretch: 112%; font-size: 18px; letter-spacing: 0.02em">GEOPATRIACIÓN<span style="color: #C2381A">.CL</span></span>
+    </a>
+    <nav aria-label="Principal" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 28px; font-size: 15px">
+      <a href="#que-es" style="text-decoration: none; padding: 10px 0">Qué es</a>
+      <a href="#ley" style="text-decoration: none; padding: 10px 0">Ley 21.719</a>
+      <a href="#diagnostico" style="text-decoration: none; padding: 10px 0">Diagnóstico</a>
+      <a href="#directorio" style="text-decoration: none; padding: 10px 0">Directorio</a>
+      <a href="#diagnostico" style="text-decoration: none; background: #0F1F19; color: #ECEEE8; padding: 12px 18px; font-weight: 600">Medir mi exposición →</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" style="border-top: 1px solid #0F1F19; border-bottom: 1px solid #0F1F19">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 0 24px; display: flex; flex-wrap: wrap">
+      <div style="flex: 999 1 620px; min-width: 0; padding: 72px 48px 72px 0">
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.06em; color: #C2381A; font-weight: 600; margin-bottom: 28px">● LEY 21.719 · VIGENTE DESDE DICIEMBRE 2026</div>
+        <h1 style="margin: 0; font-weight: 800; font-stretch: 68%; font-size: clamp(64px, 10vw, 152px); line-height: 0.86; letter-spacing: -0.01em; text-transform: uppercase">¿Dónde<br>viven tus<br><span style="color: #C2381A">datos?</span></h1>
+        <p style="margin: 36px 0 0; max-width: 560px; font-size: 21px; line-height: 1.45">La mayoría de las empresas chilenas no sabe responder. Sus correos, facturas y datos de clientes están en servidores de otro país, bajo otra ley. <strong>Geopatriación</strong> es decidir dónde quieres que estén.</p>
+        <div style="margin-top: 40px; display: flex; flex-wrap: wrap; gap: 12px">
+          <a href="#diagnostico" style="text-decoration: none; background: #C2381A; color: #FFFFFF; padding: 16px 24px; font-weight: 700; font-size: 17px">Diagnóstico gratuito · 4 min</a>
+          <a href="#que-es" style="text-decoration: none; border: 1px solid #0F1F19; padding: 15px 24px; font-weight: 600; font-size: 17px">Qué significa geopatriar</a>
+        </div>
+      </div>
+
+      <!-- Escala de latitud: Chile como regla vertical -->
+      <div style="flex: 1 1 340px; min-width: 0; border-left: 1px solid #0F1F19; padding: 40px 0 40px 32px; display: flex; flex-direction: column; justify-content: center">
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3F4B45; letter-spacing: 0.05em; margin-bottom: 12px">FIG. 1 — EL VIAJE DE UN DATO</div>
+        <svg viewBox="0 0 340 600" style="width: 100%; max-width: 380px; height: auto" role="img" aria-label="Escala de latitud de Chile. Un dato que sale de Santiago, a 33 grados sur, puede guardarse en São Paulo, a 23 grados sur, o en Virginia, Estados Unidos, a 39 grados norte, unos 8.100 kilómetros al norte.">
+          <g font-family="IBM Plex Mono, monospace" font-size="11" fill="#3F4B45">
+            <line x1="80" y1="110" x2="80" y2="590" stroke="#0F1F19" stroke-width="1.5"></line>
+            <line x1="68" y1="110" x2="80" y2="110"  stroke="#0F1F19"></line><text x="62" y="114" text-anchor="end">−15°</text>
+            <line x1="72" y1="170" x2="80" y2="170"  stroke="#0F1F19"></line><text x="62" y="174" text-anchor="end">−20°</text>
+            <line x1="68" y1="230" x2="80" y2="230"  stroke="#0F1F19"></line><text x="62" y="234" text-anchor="end">−25°</text>
+            <line x1="72" y1="290" x2="80" y2="290"  stroke="#0F1F19"></line><text x="62" y="294" text-anchor="end">−30°</text>
+            <line x1="68" y1="350" x2="80" y2="350"  stroke="#0F1F19"></line><text x="62" y="354" text-anchor="end">−35°</text>
+            <line x1="72" y1="410" x2="80" y2="410"  stroke="#0F1F19"></line><text x="62" y="414" text-anchor="end">−40°</text>
+            <line x1="68" y1="470" x2="80" y2="470"  stroke="#0F1F19"></line><text x="62" y="474" text-anchor="end">−45°</text>
+            <line x1="72" y1="530" x2="80" y2="530"  stroke="#0F1F19"></line><text x="62" y="534" text-anchor="end">−50°</text>
+            <line x1="68" y1="590" x2="80" y2="590"  stroke="#0F1F19"></line><text x="62" y="594" text-anchor="end">−55°</text>
+          </g>
+          <!-- tramo continental de Chile -->
+          <line x1="80" y1="146" x2="80" y2="573" stroke="#0F1F19" stroke-width="6"></line>
+          <!-- Virginia, fuera de escala -->
+          <path d="M80 331 C 150 300, 200 160, 200 20" fill="none" stroke="#C2381A" stroke-width="1.5" stroke-dasharray="4 5"></path>
+          <polygon points="200,6 194,20 206,20" fill="#C2381A"></polygon>
+          <g font-family="IBM Plex Mono, monospace" font-size="11">
+            <text x="214" y="16" fill="#0F1F19" font-weight="600">us-east-1</text>
+            <text x="214" y="31" fill="#3F4B45">Virginia, EE.UU.</text>
+            <text x="214" y="46" fill="#3F4B45">+39,0° · ≈ 8.100 km</text>
+          </g>
+          <!-- São Paulo -->
+          <path d="M80 331 C 120 300, 150 230, 168 213" fill="none" stroke="#0F1F19" stroke-width="1" stroke-dasharray="2 4"></path>
+          <circle cx="170" cy="213" r="5" fill="#ECEEE8" stroke="#0F1F19" stroke-width="1.5"></circle>
+          <g font-family="IBM Plex Mono, monospace" font-size="11">
+            <text x="184" y="210" fill="#0F1F19" font-weight="600">sa-east-1</text>
+            <text x="184" y="225" fill="#3F4B45">São Paulo, BR · −23,5°</text>
+          </g>
+          <!-- Santiago -->
+          <circle cx="80" cy="331" r="9" fill="#C2381A"></circle>
+          <circle cx="80" cy="331" r="16" fill="none" stroke="#C2381A" stroke-width="1"></circle>
+          <g font-family="IBM Plex Mono, monospace" font-size="11">
+            <text x="104" y="350" fill="#0F1F19" font-weight="600">Tu empresa</text>
+            <text x="104" y="365" fill="#3F4B45">Santiago · −33,4°</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Traza tipo traceroute -->
+  <section aria-labelledby="traza-t" style="max-width: 1280px; margin: 0 auto; padding: 64px 24px 24px">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 20px">
+      <h2 id="traza-t" style="margin: 0; font-size: 15px; font-family: 'IBM Plex Mono', monospace; font-weight: 600; letter-spacing: 0.05em">$ traza --dato "factura_cliente_2026.pdf"</h2>
+      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3F4B45">EJEMPLO ILUSTRATIVO</span>
+    </div>
+    <div style="overflow-x: auto; border: 1px solid #0F1F19; background: #F6F7F3">
+      <table style="width: 100%; min-width: 760px; border-collapse: collapse; font-family: 'IBM Plex Mono', monospace; font-size: 14px">
+        <thead>
+          <tr style="text-align: left; color: #3F4B45; font-size: 12px; letter-spacing: 0.05em">
+            <th scope="col" style="padding: 12px 16px; border-bottom: 1px solid #0F1F19; font-weight: 500">SALTO</th>
+            <th scope="col" style="padding: 12px 16px; border-bottom: 1px solid #0F1F19; font-weight: 500">DÓNDE</th>
+            <th scope="col" style="padding: 12px 16px; border-bottom: 1px solid #0F1F19; font-weight: 500">QUIÉN LO OPERA</th>
+            <th scope="col" style="padding: 12px 16px; border-bottom: 1px solid #0F1F19; font-weight: 500">LEY QUE APLICA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">01</td>
+            <td style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">Santiago, CL</td>
+            <td style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">Tu oficina</td>
+            <td style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">Chile</td>
+          </tr>
+          <tr>
+            <td style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">02</td>
+            <td style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">São Paulo, BR</td>
+            <td style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">Proveedor de correo</td>
+            <td style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">Brasil (LGPD)</td>
+          </tr>
+          <tr>
+            <td style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">03</td>
+            <td style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">Virginia, US</td>
+            <td style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">Software de facturación</td>
+            <td style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">EE.UU. (CLOUD Act)</td>
+          </tr>
+          <tr style="color: #C2381A; font-weight: 600">
+            <td style="padding: 14px 16px">04</td>
+            <td style="padding: 14px 16px">¿?</td>
+            <td style="padding: 14px 16px">Respaldo del respaldo</td>
+            <td style="padding: 14px 16px">Nadie en tu empresa lo sabe</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Definición -->
+  <section id="que-es" aria-labelledby="def-t" style="max-width: 1280px; margin: 0 auto; padding: 96px 24px">
+    <div style="display: flex; flex-wrap: wrap; gap: 48px">
+      <div style="flex: 1 1 280px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #3F4B45; letter-spacing: 0.05em">§ 1 — QUÉ ES</div>
+      <div style="flex: 999 1 640px; min-width: 0">
+        <h2 id="def-t" style="margin: 0; font-weight: 800; font-stretch: 100%; font-size: clamp(40px, 5vw, 64px); line-height: 1">geo·pa·tria·ción</h2>
+        <div style="margin-top: 10px; font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #3F4B45">s. f. · del ingl. <em>geopatriation</em></div>
+        <ol style="margin: 32px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 24px; max-width: 760px">
+          <li style="display: flex; gap: 20px; font-size: 21px; line-height: 1.45"><span style="font-weight: 800; color: #C2381A">1.</span><span>Traer datos y sistemas desde nubes globales a infraestructura que opera bajo la jurisdicción propia.</span></li>
+          <li style="display: flex; gap: 20px; font-size: 21px; line-height: 1.45"><span style="font-weight: 800; color: #C2381A">2.</span><span>Decidir, dato por dato, qué puede vivir afuera y qué debe quedarse en casa, según su riesgo legal y operativo.</span></li>
+        </ol>
+        <p style="margin: 36px 0 0; padding-top: 24px; border-top: 1px solid #0F1F19; max-width: 760px; color: #3F4B45">No significa abandonar la nube. Significa saber dónde está cada cosa, quién la puede pedir y qué haces si mañana ya no puedes acceder a ella.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Las tres preguntas (fondo tinta) -->
+  <section id="ley" aria-labelledby="preg-t" style="background: #0F1F19; color: #ECEEE8">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 96px 24px">
+      <div style="display: flex; flex-wrap: wrap; gap: 48px; margin-bottom: 56px">
+        <div style="flex: 1 1 280px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #A9B3AD; letter-spacing: 0.05em">§ 2 — POR QUÉ AHORA</div>
+        <div style="flex: 999 1 640px; min-width: 0">
+          <h2 id="preg-t" style="margin: 0; font-weight: 800; font-stretch: 75%; font-size: clamp(40px, 6vw, 80px); line-height: 0.95; text-transform: uppercase">Tres preguntas que la nueva ley te va a hacer</h2>
+          <p style="margin: 24px 0 0; max-width: 640px; color: #C9D0CB; font-size: 19px">La Ley 21.719 de protección de datos personales crea una agencia fiscalizadora y exige justificar las transferencias de datos fuera de Chile. Si no puedes responder esto, empieza aquí.</p>
+        </div>
+      </div>
+      <div style="border-top: 1px solid #4A5A52">
+        <div style="display: flex; flex-wrap: wrap; gap: 16px 48px; padding: 32px 0; border-bottom: 1px solid #4A5A52">
+          <div style="flex: 1 1 280px; font-weight: 800; font-stretch: 68%; font-size: 72px; line-height: 0.9; color: #FF7A52">01</div>
+          <div style="flex: 999 1 640px; min-width: 0">
+            <h3 style="margin: 0; font-size: 28px; font-weight: 700; line-height: 1.2">¿En qué país están físicamente los datos de tus clientes?</h3>
+            <p style="margin: 10px 0 0; color: #C9D0CB; max-width: 640px">No dónde está la empresa que te vende el software, sino el disco donde se guardan.</p>
+          </div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 16px 48px; padding: 32px 0; border-bottom: 1px solid #4A5A52">
+          <div style="flex: 1 1 280px; font-weight: 800; font-stretch: 68%; font-size: 72px; line-height: 0.9; color: #FF7A52">02</div>
+          <div style="flex: 999 1 640px; min-width: 0">
+            <h3 style="margin: 0; font-size: 28px; font-weight: 700; line-height: 1.2">¿Qué gobierno extranjero puede pedirlos sin avisarte?</h3>
+            <p style="margin: 10px 0 0; color: #C9D0CB; max-width: 640px">Cada jurisdicción tiene sus reglas de acceso. Tu contrato con el proveedor no siempre las supera.</p>
+          </div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 16px 48px; padding: 32px 0; border-bottom: 1px solid #4A5A52">
+          <div style="flex: 1 1 280px; font-weight: 800; font-stretch: 68%; font-size: 72px; line-height: 0.9; color: #FF7A52">03</div>
+          <div style="flex: 999 1 640px; min-width: 0">
+            <h3 style="margin: 0; font-size: 28px; font-weight: 700; line-height: 1.2">¿Qué pasa si mañana tu proveedor corta el servicio?</h3>
+            <p style="margin: 10px 0 0; color: #C9D0CB; max-width: 640px">Sanciones, cambios de precio, un cable submarino cortado. ¿Cuánto tiempo puede operar tu empresa sin esos sistemas?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diagnóstico -->
+  <section id="diagnostico" aria-labelledby="diag-t" style="max-width: 1280px; margin: 0 auto; padding: 96px 24px">
+    <div style="display: flex; flex-wrap: wrap; gap: 48px">
+      <div style="flex: 1 1 380px; min-width: 0">
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #3F4B45; letter-spacing: 0.05em; margin-bottom: 20px">§ 3 — DIAGNÓSTICO</div>
+        <h2 id="diag-t" style="margin: 0; font-weight: 800; font-stretch: 75%; font-size: clamp(40px, 5vw, 68px); line-height: 0.95; text-transform: uppercase">Mide tu exposición en 10 preguntas</h2>
+        <p style="margin: 24px 0 0; max-width: 460px; font-size: 19px">Sin tecnicismos. Al final recibes un puntaje de 0 a 100 y un informe con los tres cambios que más reducen tu riesgo.</p>
+        <ul style="margin: 28px 0 0; padding: 0; list-style: none; font-family: 'IBM Plex Mono', monospace; font-size: 14px; display: flex; flex-direction: column; gap: 8px">
+          <li>— Gratis, sin crear cuenta</li>
+          <li>— 4 minutos</li>
+          <li>— Informe en PDF a tu correo</li>
+        </ul>
+      </div>
+      <form style="flex: 1 1 520px; min-width: 0; border: 1.5px solid #0F1F19; background: #F6F7F3">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 14px 20px; border-bottom: 1px solid #0F1F19; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.05em">
+          <span>PREGUNTA 03 / 10</span>
+          <span style="display: flex; gap: 4px" aria-hidden="true">
+            <span style="width: 18px; height: 6px; background: #0F1F19"></span><span style="width: 18px; height: 6px; background: #0F1F19"></span><span style="width: 18px; height: 6px; background: #C2381A"></span><span style="width: 18px; height: 6px; background: #C9CFC9"></span><span style="width: 18px; height: 6px; background: #C9CFC9"></span><span style="width: 18px; height: 6px; background: #C9CFC9"></span><span style="width: 18px; height: 6px; background: #C9CFC9"></span><span style="width: 18px; height: 6px; background: #C9CFC9"></span><span style="width: 18px; height: 6px; background: #C9CFC9"></span><span style="width: 18px; height: 6px; background: #C9CFC9"></span>
+          </span>
+        </div>
+        <fieldset style="border: 0; margin: 0; padding: 28px 20px 8px">
+          <legend style="padding: 28px 0 0; font-size: 24px; font-weight: 700; line-height: 1.25">¿Dónde está el correo electrónico de tu empresa?</legend>
+          <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 8px">
+            <label style="display: flex; align-items: center; gap: 14px; padding: 14px 16px; border: 1px solid #9AA49E; background: #FFFFFF; cursor: pointer"><input type="radio" name="q3" style="width: 18px; height: 18px; accent-color: #0F1F19"> Google Workspace o Microsoft 365</label>
+            <label style="display: flex; align-items: center; gap: 14px; padding: 14px 16px; border: 1.5px solid #0F1F19; background: #FFFFFF; cursor: pointer; font-weight: 600"><input type="radio" name="q3" checked style="width: 18px; height: 18px; accent-color: #0F1F19"> En el hosting de mi sitio web</label>
+            <label style="display: flex; align-items: center; gap: 14px; padding: 14px 16px; border: 1px solid #9AA49E; background: #FFFFFF; cursor: pointer"><input type="radio" name="q3" style="width: 18px; height: 18px; accent-color: #0F1F19"> En un servidor propio</label>
+            <label style="display: flex; align-items: center; gap: 14px; padding: 14px 16px; border: 1px solid #9AA49E; background: #FFFFFF; cursor: pointer"><input type="radio" name="q3" style="width: 18px; height: 18px; accent-color: #0F1F19"> No lo sé</label>
+          </div>
+        </fieldset>
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 20px">
+          <button type="button" style="font: inherit; background: none; border: 0; padding: 12px 0; color: #3F4B45; cursor: pointer">← Anterior</button>
+          <button type="button" style="font: inherit; font-weight: 700; background: #C2381A; color: #FFFFFF; border: 0; padding: 14px 24px; cursor: pointer">Siguiente →</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Directorio -->
+  <section id="directorio" aria-labelledby="dir-t" style="border-top: 1px solid #0F1F19">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 96px 24px">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 36px">
+        <div>
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #3F4B45; letter-spacing: 0.05em; margin-bottom: 20px">§ 4 — DIRECTORIO</div>
+          <h2 id="dir-t" style="margin: 0; font-weight: 800; font-stretch: 75%; font-size: clamp(40px, 5vw, 68px); line-height: 0.95; text-transform: uppercase">Infraestructura con dirección en Chile</h2>
+        </div>
+        <a href="#postular" style="text-decoration: none; border: 1px solid #0F1F19; padding: 14px 20px; font-weight: 600">¿Eres proveedor? Postula →</a>
+      </div>
+      <div style="overflow-x: auto; border-top: 1.5px solid #0F1F19">
+        <table style="width: 100%; min-width: 760px; border-collapse: collapse">
+          <thead>
+            <tr style="text-align: left; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.05em; color: #3F4B45">
+              <th scope="col" style="padding: 14px 12px 14px 0; border-bottom: 1px solid #0F1F19; font-weight: 500">PROVEEDOR</th>
+              <th scope="col" style="padding: 14px 12px; border-bottom: 1px solid #0F1F19; font-weight: 500">SERVICIO</th>
+              <th scope="col" style="padding: 14px 12px; border-bottom: 1px solid #0F1F19; font-weight: 500">UBICACIÓN</th>
+              <th scope="col" style="padding: 14px 12px; border-bottom: 1px solid #0F1F19; font-weight: 500">CERTIFICACIONES</th>
+              <th scope="col" style="padding: 14px 0 14px 12px; border-bottom: 1px solid #0F1F19; font-weight: 500; text-align: right">FICHA</th>
+            </tr>
+          </thead>
+          <tbody style="font-size: 17px">
+            <tr>
+              <td style="padding: 20px 12px 20px 0; border-bottom: 1px solid #C9CFC9; font-weight: 700">[PROVEEDOR 1]</td>
+              <td style="padding: 20px 12px; border-bottom: 1px solid #C9CFC9">Data center · colocation</td>
+              <td style="padding: 20px 12px; border-bottom: 1px solid #C9CFC9; font-family: 'IBM Plex Mono', monospace; font-size: 14px">[COMUNA], RM</td>
+              <td style="padding: 20px 12px; border-bottom: 1px solid #C9CFC9; font-family: 'IBM Plex Mono', monospace; font-size: 14px">[ISO 27001 · TIER]</td>
+              <td style="padding: 20px 0 20px 12px; border-bottom: 1px solid #C9CFC9; text-align: right"><a href="#">Ver →</a></td>
+            </tr>
+            <tr>
+              <td style="padding: 20px 12px 20px 0; border-bottom: 1px solid #C9CFC9; font-weight: 700">[PROVEEDOR 2]</td>
+              <td style="padding: 20px 12px; border-bottom: 1px solid #C9CFC9">Nube pública · región local</td>
+              <td style="padding: 20px 12px; border-bottom: 1px solid #C9CFC9; font-family: 'IBM Plex Mono', monospace; font-size: 14px">[COMUNA], RM</td>
+              <td style="padding: 20px 12px; border-bottom: 1px solid #C9CFC9; font-family: 'IBM Plex Mono', monospace; font-size: 14px">[CERTIFICACIONES]</td>
+              <td style="padding: 20px 0 20px 12px; border-bottom: 1px solid #C9CFC9; text-align: right"><a href="#">Ver →</a></td>
+            </tr>
+            <tr>
+              <td style="padding: 20px 12px 20px 0; border-bottom: 1px solid #C9CFC9; font-weight: 700">[PROVEEDOR 3]</td>
+              <td style="padding: 20px 12px; border-bottom: 1px solid #C9CFC9">Correo y respaldo para pymes</td>
+              <td style="padding: 20px 12px; border-bottom: 1px solid #C9CFC9; font-family: 'IBM Plex Mono', monospace; font-size: 14px">[CIUDAD], [REGIÓN]</td>
+              <td style="padding: 20px 12px; border-bottom: 1px solid #C9CFC9; font-family: 'IBM Plex Mono', monospace; font-size: 14px">[CERTIFICACIONES]</td>
+              <td style="padding: 20px 0 20px 12px; border-bottom: 1px solid #C9CFC9; text-align: right"><a href="#">Ver →</a></td>
+            </tr>
+            <tr>
+              <td style="padding: 20px 12px 20px 0; border-bottom: 1px solid #C9CFC9; font-weight: 700">[PROVEEDOR 4]</td>
+              <td style="padding: 20px 12px; border-bottom: 1px solid #C9CFC9">Asesoría legal en datos</td>
+              <td style="padding: 20px 12px; border-bottom: 1px solid #C9CFC9; font-family: 'IBM Plex Mono', monospace; font-size: 14px">[CIUDAD], [REGIÓN]</td>
+              <td style="padding: 20px 12px; border-bottom: 1px solid #C9CFC9; font-family: 'IBM Plex Mono', monospace; font-size: 14px">—</td>
+              <td style="padding: 20px 0 20px 12px; border-bottom: 1px solid #C9CFC9; text-align: right"><a href="#">Ver →</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Boletín -->
+  <section id="postular" aria-labelledby="bol-t" style="background: #C2381A; color: #FFFFFF">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 80px 24px; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 40px">
+      <div style="flex: 1 1 520px; min-width: 0">
+        <h2 id="bol-t" style="margin: 0; font-weight: 800; font-stretch: 75%; font-size: clamp(36px, 4.5vw, 60px); line-height: 0.95; text-transform: uppercase">Un correo al mes sobre soberanía digital en Chile</h2>
+        <p style="margin: 18px 0 0; max-width: 520px; font-size: 18px">Cambios regulatorios, nueva infraestructura local y casos reales. Corto y sin relleno.</p>
+      </div>
+      <form style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+        <label for="correo" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.05em">CORREO DE TRABAJO</label>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px">
+          <input id="correo" type="email" placeholder="nombre@empresa.cl" style="flex: 1 1 240px; min-width: 0; font: inherit; font-size: 17px; padding: 14px 16px; border: 0; background: #FFFFFF; color: #0F1F19">
+          <button type="button" style="font: inherit; font-weight: 700; font-size: 17px; background: #0F1F19; color: #FFFFFF; border: 0; padding: 14px 24px; cursor: pointer">Suscribirme</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Pie -->
+  <footer style="background: #0F1F19; color: #C9D0CB; font-family: 'IBM Plex Mono', monospace; font-size: 13px">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 40px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px">
+      <span><span style="color: #ECEEE8; font-weight: 600">GEOPATRIACIÓN.CL</span> · Hecho en Santiago, a −33,4°</span>
+      <span>[CONTACTO] · [AVISO DE PRIVACIDAD] · Datos alojados en Chile</span>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
