@@ -21,6 +21,34 @@ body{margin:0;background:#ECEEE8}
 a{color:#0F1F19}a:hover{color:#C2381A}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
+.diag{flex:1 1 520px;min-width:0;border:1.5px solid #0F1F19;background:#F6F7F3}
+.diag-top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 20px;border-bottom:1px solid #0F1F19;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.05em}
+.diag-barra{display:flex;gap:4px}.diag-barra span{width:18px;height:6px;background:#C9CFC9;transition:background .2s}
+.diag-barra .hecho{background:#0F1F19}.diag-barra .actual{background:#C2381A}
+.diag fieldset{border:0;margin:0;padding:28px 20px 8px;min-width:0}
+.diag legend{padding:28px 0 0;font-size:24px;font-weight:700;line-height:1.25}
+.diag-ops{margin-top:20px;display:flex;flex-direction:column;gap:8px}
+.diag-op{display:flex;align-items:center;gap:14px;padding:14px 16px;border:1px solid #9AA49E;background:#fff;cursor:pointer;transition:border-color .15s}
+.diag-op:hover{border-color:#0F1F19}
+.diag-op:has(input:checked){border:1.5px solid #0F1F19;padding:13.5px 15.5px;font-weight:600}
+.diag-op input{width:18px;height:18px;margin:0;accent-color:#0F1F19;flex:none}
+.diag-op:has(input:focus-visible){outline:2px solid #C2381A;outline-offset:2px}
+.diag-nav[hidden]{display:none}
+.diag-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:20px}
+.diag-ant{font:inherit;background:none;border:0;padding:12px 0;color:#3F4B45;cursor:pointer}
+.diag-ant[hidden]{display:block;visibility:hidden}
+.diag-sig{font:inherit;font-weight:700;background:#C2381A;color:#fff;border:0;padding:14px 24px;cursor:pointer;min-height:48px}
+.diag-sig:disabled{background:#C9CFC9;color:#3F4B45;cursor:not-allowed}
+.diag-paso-in{animation:entra .25s ease-out}
+@keyframes entra{from{opacity:0;transform:translateX(12px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.diag-paso-in{animation:none}}
+.diag-res{padding:28px 20px 8px}
+.diag-num{font-weight:800;font-stretch:68%;font-size:120px;line-height:.85}
+.diag-num small{font-size:32px;color:#3F4B45;font-stretch:100%}
+.diag-nivel{display:inline-block;margin-top:12px;font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;letter-spacing:.05em;padding:6px 10px;color:#fff}
+.diag-recs{margin:24px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:0;border-top:1px solid #0F1F19}
+.diag-recs li{display:flex;gap:16px;padding:16px 0;border-bottom:1px dashed #9AA49E}
+.diag-recs b{color:#C2381A;font-weight:800;flex:none}
 </style>
 </head>
 <body>
@@ -215,29 +243,20 @@ html{scroll-behavior:smooth}
         <ul style="margin: 28px 0 0; padding: 0; list-style: none; font-family: 'IBM Plex Mono', monospace; font-size: 14px; display: flex; flex-direction: column; gap: 8px">
           <li>— Gratis, sin crear cuenta</li>
           <li>— 4 minutos</li>
-          <li>— Informe en PDF a tu correo</li>
+          <li>— Resultado al instante, sin dejar datos</li>
         </ul>
       </div>
-      <form style="flex: 1 1 520px; min-width: 0; border: 1.5px solid #0F1F19; background: #F6F7F3">
-        <div style="display: flex; justify-content: space-between; align-items: center; padding: 14px 20px; border-bottom: 1px solid #0F1F19; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.05em">
-          <span>PREGUNTA 03 / 10</span>
-          <span style="display: flex; gap: 4px" aria-hidden="true">
-            <span style="width: 18px; height: 6px; background: #0F1F19"></span><span style="width: 18px; height: 6px; background: #0F1F19"></span><span style="width: 18px; height: 6px; background: #C2381A"></span><span style="width: 18px; height: 6px; background: #C9CFC9"></span><span style="width: 18px; height: 6px; background: #C9CFC9"></span><span style="width: 18px; height: 6px; background: #C9CFC9"></span><span style="width: 18px; height: 6px; background: #C9CFC9"></span><span style="width: 18px; height: 6px; background: #C9CFC9"></span><span style="width: 18px; height: 6px; background: #C9CFC9"></span><span style="width: 18px; height: 6px; background: #C9CFC9"></span>
-          </span>
+      <form id="diag" class="diag" novalidate>
+        <div class="diag-top">
+          <span id="diag-paso">PREGUNTA 01 / 10</span>
+          <span id="diag-barra" class="diag-barra" aria-hidden="true"></span>
         </div>
-        <fieldset style="border: 0; margin: 0; padding: 28px 20px 8px">
-          <legend style="padding: 28px 0 0; font-size: 24px; font-weight: 700; line-height: 1.25">¿Dónde está el correo electrónico de tu empresa?</legend>
-          <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 8px">
-            <label style="display: flex; align-items: center; gap: 14px; padding: 14px 16px; border: 1px solid #9AA49E; background: #FFFFFF; cursor: pointer"><input type="radio" name="q3" style="width: 18px; height: 18px; accent-color: #0F1F19"> Google Workspace o Microsoft 365</label>
-            <label style="display: flex; align-items: center; gap: 14px; padding: 14px 16px; border: 1.5px solid #0F1F19; background: #FFFFFF; cursor: pointer; font-weight: 600"><input type="radio" name="q3" checked style="width: 18px; height: 18px; accent-color: #0F1F19"> En el hosting de mi sitio web</label>
-            <label style="display: flex; align-items: center; gap: 14px; padding: 14px 16px; border: 1px solid #9AA49E; background: #FFFFFF; cursor: pointer"><input type="radio" name="q3" style="width: 18px; height: 18px; accent-color: #0F1F19"> En un servidor propio</label>
-            <label style="display: flex; align-items: center; gap: 14px; padding: 14px 16px; border: 1px solid #9AA49E; background: #FFFFFF; cursor: pointer"><input type="radio" name="q3" style="width: 18px; height: 18px; accent-color: #0F1F19"> No lo sé</label>
-          </div>
-        </fieldset>
-        <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 20px">
-          <button type="button" style="font: inherit; background: none; border: 0; padding: 12px 0; color: #3F4B45; cursor: pointer">← Anterior</button>
-          <button type="button" style="font: inherit; font-weight: 700; background: #C2381A; color: #FFFFFF; border: 0; padding: 14px 24px; cursor: pointer">Siguiente →</button>
+        <div id="diag-cuerpo" aria-live="polite"></div>
+        <div id="diag-nav" class="diag-nav">
+          <button type="button" id="diag-ant" class="diag-ant">← Anterior</button>
+          <button type="button" id="diag-sig" class="diag-sig" disabled>Siguiente →</button>
         </div>
+        <noscript><p style="padding: 20px">Activa JavaScript para hacer el diagnóstico.</p></noscript>
       </form>
     </div>
   </section>
@@ -324,5 +343,6 @@ html{scroll-behavior:smooth}
   </footer>
 
 </div>
+<script src="diagnostico.js" defer></script>
 </body>
 </html>
