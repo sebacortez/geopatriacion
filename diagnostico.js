@@ -176,7 +176,7 @@
       mostrar();
     });
     var bol = document.createElement('a');
-    bol.href = '#postular';
+    bol.href = '#boletin';
     bol.className = 'diag-sig';
     bol.style.textDecoration = 'none';
     bol.style.color = '#fff';

@@ -271,61 +271,43 @@ html{scroll-behavior:smooth}
   <!-- Directorio -->
   <section id="directorio" aria-labelledby="dir-t" style="border-top: 1px solid #0F1F19">
     <div style="max-width: 1280px; margin: 0 auto; padding: 96px 24px">
-      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 36px">
-        <div>
-          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #3F4B45; letter-spacing: 0.05em; margin-bottom: 20px">§ 4 — DIRECTORIO</div>
-          <h2 id="dir-t" style="margin: 0; font-weight: 800; font-stretch: 75%; font-size: clamp(40px, 5vw, 68px); line-height: 0.95; text-transform: uppercase">Infraestructura con dirección en Chile</h2>
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #3F4B45; letter-spacing: 0.05em; margin-bottom: 20px">§ 4 — DIRECTORIO · EN PREPARACIÓN</div>
+      <h2 id="dir-t" style="margin: 0; font-weight: 800; font-stretch: 75%; font-size: clamp(40px, 5vw, 68px); line-height: 0.95; text-transform: uppercase; max-width: 1000px">Infraestructura con dirección en Chile</h2>
+      <p style="margin: 24px 0 0; max-width: 680px; font-size: 19px">Estamos armando un directorio de proveedores que guardan los datos en Chile, para que las empresas que quieren geopatriar sepan a quién llamar. Cada ficha va a indicar dónde está la infraestructura, qué certificaciones tiene y cómo contactar al proveedor.</p>
+      <ol style="margin: 40px 0 0; padding: 0; list-style: none; border-top: 1.5px solid #0F1F19">
+          <li style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 22px 0; border-bottom: 1px solid #C9CFC9">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #C2381A; font-weight: 600; flex: 0 0 32px">01</span>
+            <span style="flex: 1 1 260px; font-weight: 700; font-size: 19px">Data centers y colocation</span>
+            <span style="flex: 2 1 340px; color: #3F4B45">Espacio, energía y conectividad para servidores propios, en territorio chileno.</span>
+          </li>
+          <li style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 22px 0; border-bottom: 1px solid #C9CFC9">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #C2381A; font-weight: 600; flex: 0 0 32px">02</span>
+            <span style="flex: 1 1 260px; font-weight: 700; font-size: 19px">Nube con región en Chile</span>
+            <span style="flex: 2 1 340px; color: #3F4B45">Servidores virtuales, almacenamiento y bases de datos alojados físicamente en Chile.</span>
+          </li>
+          <li style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 22px 0; border-bottom: 1px solid #C9CFC9">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #C2381A; font-weight: 600; flex: 0 0 32px">03</span>
+            <span style="flex: 1 1 260px; font-weight: 700; font-size: 19px">Correo y respaldo para pymes</span>
+            <span style="flex: 2 1 340px; color: #3F4B45">Correo corporativo y copias de seguridad con los datos guardados en Chile.</span>
+          </li>
+          <li style="display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 22px 0; border-bottom: 1px solid #C9CFC9">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #C2381A; font-weight: 600; flex: 0 0 32px">04</span>
+            <span style="flex: 1 1 260px; font-weight: 700; font-size: 19px">Asesoría en protección de datos</span>
+            <span style="flex: 2 1 340px; color: #3F4B45">Abogados y consultores que preparan empresas para la Ley 21.719.</span>
+          </li>
+      </ol>
+      <div id="postular" style="margin-top: 40px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; border: 1.5px solid #0F1F19; background: #F6F7F3; padding: 28px">
+        <div style="flex: 1 1 420px; min-width: 0">
+          <div style="font-weight: 700; font-size: 22px; line-height: 1.25">¿Tu empresa ofrece alguno de estos servicios?</div>
+          <p style="margin: 8px 0 0; color: #3F4B45">Postula para aparecer cuando abramos el directorio. Solo incluimos proveedores con infraestructura o equipo en Chile.</p>
         </div>
-        <a href="#postular" style="text-decoration: none; border: 1px solid #0F1F19; padding: 14px 20px; font-weight: 600">¿Eres proveedor? Postula →</a>
-      </div>
-      <div style="overflow-x: auto; border-top: 1.5px solid #0F1F19">
-        <table style="width: 100%; min-width: 760px; border-collapse: collapse">
-          <thead>
-            <tr style="text-align: left; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.05em; color: #3F4B45">
-              <th scope="col" style="padding: 14px 12px 14px 0; border-bottom: 1px solid #0F1F19; font-weight: 500">PROVEEDOR</th>
-              <th scope="col" style="padding: 14px 12px; border-bottom: 1px solid #0F1F19; font-weight: 500">SERVICIO</th>
-              <th scope="col" style="padding: 14px 12px; border-bottom: 1px solid #0F1F19; font-weight: 500">UBICACIÓN</th>
-              <th scope="col" style="padding: 14px 12px; border-bottom: 1px solid #0F1F19; font-weight: 500">CERTIFICACIONES</th>
-              <th scope="col" style="padding: 14px 0 14px 12px; border-bottom: 1px solid #0F1F19; font-weight: 500; text-align: right">FICHA</th>
-            </tr>
-          </thead>
-          <tbody style="font-size: 17px">
-            <tr>
-              <td style="padding: 20px 12px 20px 0; border-bottom: 1px solid #C9CFC9; font-weight: 700">[PROVEEDOR 1]</td>
-              <td style="padding: 20px 12px; border-bottom: 1px solid #C9CFC9">Data center · colocation</td>
-              <td style="padding: 20px 12px; border-bottom: 1px solid #C9CFC9; font-family: 'IBM Plex Mono', monospace; font-size: 14px">[COMUNA], RM</td>
-              <td style="padding: 20px 12px; border-bottom: 1px solid #C9CFC9; font-family: 'IBM Plex Mono', monospace; font-size: 14px">[ISO 27001 · TIER]</td>
-              <td style="padding: 20px 0 20px 12px; border-bottom: 1px solid #C9CFC9; text-align: right"><a href="#">Ver →</a></td>
-            </tr>
-            <tr>
-              <td style="padding: 20px 12px 20px 0; border-bottom: 1px solid #C9CFC9; font-weight: 700">[PROVEEDOR 2]</td>
-              <td style="padding: 20px 12px; border-bottom: 1px solid #C9CFC9">Nube pública · región local</td>
-              <td style="padding: 20px 12px; border-bottom: 1px solid #C9CFC9; font-family: 'IBM Plex Mono', monospace; font-size: 14px">[COMUNA], RM</td>
-              <td style="padding: 20px 12px; border-bottom: 1px solid #C9CFC9; font-family: 'IBM Plex Mono', monospace; font-size: 14px">[CERTIFICACIONES]</td>
-              <td style="padding: 20px 0 20px 12px; border-bottom: 1px solid #C9CFC9; text-align: right"><a href="#">Ver →</a></td>
-            </tr>
-            <tr>
-              <td style="padding: 20px 12px 20px 0; border-bottom: 1px solid #C9CFC9; font-weight: 700">[PROVEEDOR 3]</td>
-              <td style="padding: 20px 12px; border-bottom: 1px solid #C9CFC9">Correo y respaldo para pymes</td>
-              <td style="padding: 20px 12px; border-bottom: 1px solid #C9CFC9; font-family: 'IBM Plex Mono', monospace; font-size: 14px">[CIUDAD], [REGIÓN]</td>
-              <td style="padding: 20px 12px; border-bottom: 1px solid #C9CFC9; font-family: 'IBM Plex Mono', monospace; font-size: 14px">[CERTIFICACIONES]</td>
-              <td style="padding: 20px 0 20px 12px; border-bottom: 1px solid #C9CFC9; text-align: right"><a href="#">Ver →</a></td>
-            </tr>
-            <tr>
-              <td style="padding: 20px 12px 20px 0; border-bottom: 1px solid #C9CFC9; font-weight: 700">[PROVEEDOR 4]</td>
-              <td style="padding: 20px 12px; border-bottom: 1px solid #C9CFC9">Asesoría legal en datos</td>
-              <td style="padding: 20px 12px; border-bottom: 1px solid #C9CFC9; font-family: 'IBM Plex Mono', monospace; font-size: 14px">[CIUDAD], [REGIÓN]</td>
-              <td style="padding: 20px 12px; border-bottom: 1px solid #C9CFC9; font-family: 'IBM Plex Mono', monospace; font-size: 14px">—</td>
-              <td style="padding: 20px 0 20px 12px; border-bottom: 1px solid #C9CFC9; text-align: right"><a href="#">Ver →</a></td>
-            </tr>
-          </tbody>
-        </table>
+        <a href="mailto:contacto@geopatriacion.cl?subject=Postulaci%C3%B3n%20al%20directorio%20de%20geopatriacion.cl&amp;body=Empresa%3A%0AServicio%3A%0AUbicaci%C3%B3n%20de%20la%20infraestructura%3A%0ACertificaciones%3A%0ASitio%20web%3A%0AContacto%3A" style="text-decoration: none; background: #0F1F19; color: #ECEEE8; padding: 16px 24px; font-weight: 700">Postular al directorio →</a>
       </div>
     </div>
   </section>
 
   <!-- Boletín -->
-  <section id="postular" aria-labelledby="bol-t" style="background: #C2381A; color: #FFFFFF">
+  <section id="boletin" aria-labelledby="bol-t" style="background: #C2381A; color: #FFFFFF">
     <div style="max-width: 1280px; margin: 0 auto; padding: 80px 24px; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 40px">
       <div style="flex: 1 1 520px; min-width: 0">
         <h2 id="bol-t" style="margin: 0; font-weight: 800; font-stretch: 75%; font-size: clamp(36px, 4.5vw, 60px); line-height: 0.95; text-transform: uppercase">Un correo al mes sobre soberanía digital en Chile</h2>
