@@ -313,12 +313,19 @@ html{scroll-behavior:smooth}
         <h2 id="bol-t" style="margin: 0; font-weight: 800; font-stretch: 75%; font-size: clamp(36px, 4.5vw, 60px); line-height: 0.95; text-transform: uppercase">Un correo al mes sobre soberanía digital en Chile</h2>
         <p style="margin: 18px 0 0; max-width: 520px; font-size: 18px">Cambios regulatorios, nueva infraestructura local y casos reales. Corto y sin relleno.</p>
       </div>
-      <form style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+      <form id="boletin-form" action="https://formsubmit.co/contacto@geopatriacion.cl" method="POST" style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
         <label for="correo" style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.05em">CORREO DE TRABAJO</label>
         <div style="display: flex; flex-wrap: wrap; gap: 8px">
-          <input id="correo" type="email" placeholder="nombre@empresa.cl" style="flex: 1 1 240px; min-width: 0; font: inherit; font-size: 17px; padding: 14px 16px; border: 0; background: #FFFFFF; color: #0F1F19">
-          <button type="button" style="font: inherit; font-weight: 700; font-size: 17px; background: #0F1F19; color: #FFFFFF; border: 0; padding: 14px 24px; cursor: pointer">Suscribirme</button>
+          <input id="correo" name="email" type="email" required autocomplete="email" placeholder="nombre@empresa.cl" style="flex: 1 1 240px; min-width: 0; font: inherit; font-size: 17px; padding: 14px 16px; border: 0; background: #FFFFFF; color: #0F1F19">
+          <button type="submit" style="font: inherit; font-weight: 700; font-size: 17px; background: #0F1F19; color: #FFFFFF; border: 0; padding: 14px 24px; cursor: pointer; min-height: 48px">Suscribirme</button>
         </div>
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position: absolute; left: -9999px">
+        <input type="hidden" name="_subject" value="Nueva suscripción al boletín de geopatriacion.cl">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://geopatriacion.cl/gracias/">
+        <p id="boletin-estado" role="status" aria-live="polite" style="margin: 4px 0 0; min-height: 24px; font-weight: 600"></p>
+        <p style="margin: 0; font-size: 14px; color: #FFFFFF; opacity: 1">Usamos tu correo solo para enviarte el boletín. Puedes darte de baja respondiendo cualquier envío.</p>
       </form>
     </div>
   </section>
@@ -333,5 +340,6 @@ html{scroll-behavior:smooth}
 
 </div>
 <script src="diagnostico.js" defer></script>
+<script src="boletin.js" defer></script>
 </body>
 </html>
