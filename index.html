@@ -113,7 +113,8 @@ footer a{display:inline-block;padding:12px 0}
       <!-- Escala de latitud: Chile como regla vertical -->
       <div class="hero-fig" style="flex: 1 1 340px; min-width: 0; border-left: 1px solid #0F1F19; padding: 40px 0 40px 32px; display: flex; flex-direction: column; justify-content: center">
         <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3F4B45; letter-spacing: 0.05em; margin-bottom: 12px">FIG. 1 — EL VIAJE DE UN DATO</div>
-        <svg class="fig-lat" viewBox="0 0 340 600" style="width: 100%; max-width: 380px; height: auto" role="img" aria-label="Escala de latitud de Chile. Un dato que sale de Santiago, a 33 grados sur, puede guardarse en São Paulo, a 23 grados sur, o en Virginia, Estados Unidos, a 39 grados norte, unos 8.100 kilómetros al norte.">
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #3F4B45; margin-bottom: 12px">Escala vertical: latitud. La posición horizontal es esquemática.</div>
+        <svg class="fig-lat" viewBox="0 0 340 600" style="width: 100%; max-width: 380px; height: auto" role="img" aria-label="Escala de latitud de Chile. Un dato que sale de Santiago, a 33 grados sur, puede guardarse en São Paulo, a 23,6 grados sur, o en Virginia, Estados Unidos, a 39 grados norte, unos 8.100 kilómetros al norte.">
           <g font-family="IBM Plex Mono, monospace" font-size="11" fill="#3F4B45">
             <line x1="80" y1="110" x2="80" y2="590" stroke="#0F1F19" stroke-width="1.5"></line>
             <line x1="68" y1="110" x2="80" y2="110"  stroke="#0F1F19"></line><text x="62" y="114" text-anchor="end">−15°</text>
@@ -127,7 +128,7 @@ footer a{display:inline-block;padding:12px 0}
             <line x1="68" y1="590" x2="80" y2="590"  stroke="#0F1F19"></line><text x="62" y="594" text-anchor="end">−55°</text>
           </g>
           <!-- tramo continental de Chile -->
-          <line x1="80" y1="146" x2="80" y2="573" stroke="#0F1F19" stroke-width="6"></line>
+          <line x1="80" y1="140" x2="80" y2="577" stroke="#0F1F19" stroke-width="6"></line>
           <!-- Virginia, fuera de escala -->
           <path d="M80 331 C 150 300, 200 160, 200 20" fill="none" stroke="#C2381A" stroke-width="1.5" stroke-dasharray="4 5"></path>
           <polygon points="200,6 194,20 206,20" fill="#C2381A"></polygon>
@@ -135,13 +136,14 @@ footer a{display:inline-block;padding:12px 0}
             <text x="214" y="16" fill="#0F1F19" font-weight="600">us-east-1</text>
             <text x="214" y="31" fill="#3F4B45">Virginia, EE.UU.</text>
             <text x="214" y="46" fill="#3F4B45">+39,0° · ≈ 8.100 km</text>
+            <text x="214" y="61" fill="#3F4B45" font-style="italic">fuera de escala</text>
           </g>
           <!-- São Paulo -->
           <path d="M80 331 C 120 300, 150 230, 168 213" fill="none" stroke="#0F1F19" stroke-width="1" stroke-dasharray="2 4"></path>
           <circle cx="170" cy="213" r="5" fill="#ECEEE8" stroke="#0F1F19" stroke-width="1.5"></circle>
           <g font-family="IBM Plex Mono, monospace" font-size="11">
             <text x="184" y="210" fill="#0F1F19" font-weight="600">sa-east-1</text>
-            <text x="184" y="225" fill="#3F4B45">São Paulo, BR · −23,5°</text>
+            <text x="184" y="225" fill="#3F4B45">São Paulo, BR · −23,6°</text>
           </g>
           <!-- Santiago -->
           <circle cx="80" cy="331" r="9" fill="#C2381A"></circle>
