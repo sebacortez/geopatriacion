@@ -29,6 +29,19 @@ a{color:#0F1F19}a:hover{color:#C2381A}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 .diag{flex:1 1 520px;min-width:0;border:1.5px solid #0F1F19;background:#F6F7F3}
+.diag-top span:first-child{white-space:nowrap}
+.diag-barra{min-width:0}.diag-barra span{flex:0 1 18px}
+footer a{display:inline-block;padding:12px 0}
+@media (max-width:640px){
+  .hero-fig{border-left:0 !important;border-top:1px solid #0F1F19;padding:32px 0 !important}
+  .fig-lat{max-height:560px;width:auto !important;display:block;margin:0 auto}
+  .traza{min-width:0 !important}
+  .traza thead{display:none}
+  .traza tr{display:block;padding:12px 16px;border-bottom:1px dashed #9AA49E}
+  .traza tr:last-child{border-bottom:0}
+  .traza td{display:flex;gap:12px;padding:3px 0 !important;border:0 !important}
+  .traza td::before{content:attr(data-label);flex:0 0 112px;color:#3F4B45;font-size:11px;letter-spacing:.05em;text-transform:uppercase;padding-top:2px}
+}
 .diag-top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 20px;border-bottom:1px solid #0F1F19;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.05em}
 .diag-barra{display:flex;gap:4px}.diag-barra span{width:18px;height:6px;background:#C9CFC9;transition:background .2s}
 .diag-barra .hecho{background:#0F1F19}.diag-barra .actual{background:#C2381A}
@@ -98,9 +111,9 @@ html{scroll-behavior:smooth}
       </div>
 
       <!-- Escala de latitud: Chile como regla vertical -->
-      <div style="flex: 1 1 340px; min-width: 0; border-left: 1px solid #0F1F19; padding: 40px 0 40px 32px; display: flex; flex-direction: column; justify-content: center">
+      <div class="hero-fig" style="flex: 1 1 340px; min-width: 0; border-left: 1px solid #0F1F19; padding: 40px 0 40px 32px; display: flex; flex-direction: column; justify-content: center">
         <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3F4B45; letter-spacing: 0.05em; margin-bottom: 12px">FIG. 1 — EL VIAJE DE UN DATO</div>
-        <svg viewBox="0 0 340 600" style="width: 100%; max-width: 380px; height: auto" role="img" aria-label="Escala de latitud de Chile. Un dato que sale de Santiago, a 33 grados sur, puede guardarse en São Paulo, a 23 grados sur, o en Virginia, Estados Unidos, a 39 grados norte, unos 8.100 kilómetros al norte.">
+        <svg class="fig-lat" viewBox="0 0 340 600" style="width: 100%; max-width: 380px; height: auto" role="img" aria-label="Escala de latitud de Chile. Un dato que sale de Santiago, a 33 grados sur, puede guardarse en São Paulo, a 23 grados sur, o en Virginia, Estados Unidos, a 39 grados norte, unos 8.100 kilómetros al norte.">
           <g font-family="IBM Plex Mono, monospace" font-size="11" fill="#3F4B45">
             <line x1="80" y1="110" x2="80" y2="590" stroke="#0F1F19" stroke-width="1.5"></line>
             <line x1="68" y1="110" x2="80" y2="110"  stroke="#0F1F19"></line><text x="62" y="114" text-anchor="end">−15°</text>
@@ -149,7 +162,7 @@ html{scroll-behavior:smooth}
       <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3F4B45">EJEMPLO ILUSTRATIVO</span>
     </div>
     <div style="overflow-x: auto; border: 1px solid #0F1F19; background: #F6F7F3">
-      <table style="width: 100%; min-width: 760px; border-collapse: collapse; font-family: 'IBM Plex Mono', monospace; font-size: 14px">
+      <table class="traza" style="width: 100%; min-width: 760px; border-collapse: collapse; font-family: 'IBM Plex Mono', monospace; font-size: 14px">
         <thead>
           <tr style="text-align: left; color: #3F4B45; font-size: 12px; letter-spacing: 0.05em">
             <th scope="col" style="padding: 12px 16px; border-bottom: 1px solid #0F1F19; font-weight: 500">SALTO</th>
@@ -160,28 +173,28 @@ html{scroll-behavior:smooth}
         </thead>
         <tbody>
           <tr>
-            <td style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">01</td>
-            <td style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">Santiago, CL</td>
-            <td style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">Tu oficina</td>
-            <td style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">Chile</td>
+            <td data-label="Salto" style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">01</td>
+            <td data-label="Dónde" style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">Santiago, CL</td>
+            <td data-label="Quién lo opera" style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">Tu oficina</td>
+            <td data-label="Ley que aplica" style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">Chile</td>
           </tr>
           <tr>
-            <td style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">02</td>
-            <td style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">São Paulo, BR</td>
-            <td style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">Proveedor de correo</td>
-            <td style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">Brasil (LGPD)</td>
+            <td data-label="Salto" style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">02</td>
+            <td data-label="Dónde" style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">São Paulo, BR</td>
+            <td data-label="Quién lo opera" style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">Proveedor de correo</td>
+            <td data-label="Ley que aplica" style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">Brasil (LGPD)</td>
           </tr>
           <tr>
-            <td style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">03</td>
-            <td style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">Virginia, US</td>
-            <td style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">Software de facturación</td>
-            <td style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">EE.UU. (CLOUD Act)</td>
+            <td data-label="Salto" style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">03</td>
+            <td data-label="Dónde" style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">Virginia, US</td>
+            <td data-label="Quién lo opera" style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">Software de facturación</td>
+            <td data-label="Ley que aplica" style="padding: 14px 16px; border-bottom: 1px dashed #9AA49E">EE.UU. (CLOUD Act)</td>
           </tr>
           <tr style="color: #C2381A; font-weight: 600">
-            <td style="padding: 14px 16px">04</td>
-            <td style="padding: 14px 16px">¿?</td>
-            <td style="padding: 14px 16px">Respaldo del respaldo</td>
-            <td style="padding: 14px 16px">Nadie en tu empresa lo sabe</td>
+            <td data-label="Salto" style="padding: 14px 16px">04</td>
+            <td data-label="Dónde" style="padding: 14px 16px">¿?</td>
+            <td data-label="Quién lo opera" style="padding: 14px 16px">Respaldo del respaldo</td>
+            <td data-label="Ley que aplica" style="padding: 14px 16px">Nadie en tu empresa lo sabe</td>
           </tr>
         </tbody>
       </table>

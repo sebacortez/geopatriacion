@@ -38,7 +38,7 @@ article li{margin-bottom:8px}
 .resumen{border:1.5px solid #0F1F19;background:#F6F7F3;padding:24px 24px 8px;margin-bottom:48px}
 .resumen p:first-child{font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.05em;color:#3F4B45;margin-bottom:12px}
 .tabla{overflow-x:auto;border-top:1.5px solid #0F1F19;margin:0 0 24px}
-.tabla table{width:100%;min-width:520px;border-collapse:collapse;font-size:16px}
+.tabla table{width:100%;border-collapse:collapse;font-size:16px}
 .tabla th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.05em;color:#3F4B45;font-weight:500;padding:12px 12px 12px 0;border-bottom:1px solid #0F1F19}
 .tabla td{padding:14px 12px 14px 0;border-bottom:1px solid #C9CFC9;vertical-align:top}
 .lista-check{list-style:none;padding:0}
@@ -60,5 +60,6 @@ details p{margin:0 0 18px}
 .boton:hover{color:#fff;background:#A42E14}
 .pie{background:#0F1F19;color:#C9D0CB;font-family:'IBM Plex Mono',monospace;font-size:13px;border-top:1px solid #4A5A52}
 .pie div{padding:32px 24px}
-.pie a{color:#C9D0CB}
+.pie a{color:#C9D0CB;display:inline-block;padding:12px 0}
 @media (max-width:900px){.indice{position:static}}
+@media (max-width:640px){.cab nav{gap:0 22px}.indice ol{columns:2;column-gap:20px}.indice li{break-inside:avoid}}
